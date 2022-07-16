@@ -1,0 +1,53 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style type="text/css">
+* {border:2px double black;
+   background-color:aqua;}
+#id {color:black;
+font-style:oblique;
+     font-family:fantasy;
+     color:magenta;
+     font-family:fantasy;
+     font-style:oblique;
+     text-align:center;
+     display:relative;
+     }
+</style>
+<body>
+<h1>SUBDOMAIN TAKEOVER</h1>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<ul>
+<li></li>
+<li>By providing fake websites.</li>
+<li>Can able to inject malicious code according to the attacking trick.</li>
+<li>Malware distribution</li>
+<li>Phising</li>
+<li>Xss</li>
+<li>Authentication Bypass</li>
+<li>CSP bypass...........</li>
+</ul>
+<button onclick=alert(document.location)>Dont click me</button>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script type="text/javascript">
+document.getElementById("demo1").innerHTML="SUBDOMAIN TAKEOVER OCCURS WHEN A SUBDOMAIN HAS A (CNAME) POINTED TO CONTENT DELIVERY SERVICE BUT THE SUBDOMAIN HAS NOT PROVIDED CONTENT BY THE HOST.AN ATTACKER CAN EASILY TAKE OVER THAT SUBDOMAIN BY PROVIDING HIS/HER OWN VIRTUAL HOST AND THEN HOSTING THE MALICIOUS CONTENT.BY TAKING OVER THE SUBDOMAIN ITS ENABLE ATTACKER TO PERFORM MANY ATTACKSSS..";
+document.getElementById("demo2").innerHTML="BY EXPLOIING THIS BUG ..AN ATTACKER ABLE TO TAKE FULL CONTROL OVER THE SUBDOMAIN BY FOLLOWING ATTACKS VECTOR.";
+setTimeout(mine,1000);
+function mine(){
+document.getElementById("time").innerHTML="I Love You.";
+}
+setInterval(inter,1000);
+function inter(){
+let d=new Date();
+document.getElementById("demo3").innerHTML="CURRENT TIME=>"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+const mytime=document.getElementById("demo4");
+setInterval(function(){
+mytime.innerHTML += "YOU HAVE BEEN TAKEN OVER.."},10000);
+</script>
+</body>
+</head>
+</html>
